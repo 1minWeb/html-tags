@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+        }
+        section h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        form input[type="submit"], form input[type="reset"], form input[type="button"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover, form input[type="reset"]:hover, form input[type="button"]:hover {
+            background-color: #555;
+        }
+        img, audio, video, object, iframe {
+            margin-top: 20px;
+            max-width: 100%;
+        }
+        figure {
+            margin: 0;
+            padding: 0;
+        }
+        figcaption {
+            text-align: center;
+            font-style: italic;
+        }
+        .details-summary {
+            margin-top: 20px;
+        }
+        @media (min-width: 768px) {
+            nav ul li {
+                margin-right: 20px;
+            }
+            form input, form select, form textarea {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Sample HTML Page</h1>
+    <p>This page includes a variety of HTML tags and data sources.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section4">Section 4</a></li>
+        <li><a href="#section5">Section 5</a></li>
+        <li><a href="#section6">Section 6</a></li>
+        <li><a href="#section7">Section 7</a></li>
+    </ul>
+</nav>
+
+<section id="section1">
+    <h2>Section 1: Text and Formatting</h2>
+    <p>This is a paragraph with <strong>bold</strong>, <em>italic</em>, and <u>underlined</u> text.</p>
+    <blockquote>This is a blockquote.</blockquote>
+    <pre>This is preformatted text.</pre>
+    <code>This is inline code.</code>
+    <abbr title="HyperText Markup Language">HTML</abbr> is the standard markup language for creating web pages.
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+    <bdo dir="rtl">This text will be displayed in right-to-left direction.</bdo>
+</section>
+
+<section id="section2">
+    <h2>Section 2: Lists</h2>
+    <h3>Ordered List</h3>
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+
+    <h3>Definition List</h3>
+    <dl>
+        <dt>Term 1</dt>
+        <dd>Definition 1</dd>
+        <dt>Term 2</dt>
+        <dd>Definition 2</dd>
+    </dl>
+</section>
+
+<section id="section3">
+    <h2>Section 3: Tables and Forms</h2>
+    <h3>Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Form</h3>
+    <form action="submit.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <input type="button" value="Click Me">
+    </form>
+</section>
+
+<section id="section4">
+    <h2>Section 4: Multimedia</h2>
+    <h3>Image</h3>
+    <figure>
+        <img src="https://via.placeholder.com/150" alt="Sample Image">
+        <figcaption>Sample Image</figcaption>
+    </figure>
+
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="audiofile.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <video controls width="300">
+        <source src="videofile.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+</section>
+
+<section id="section5">
+    <h2>Section 5: Data Sources</h2>
+    <h3>Embedded Object</h3>
+    <object data="sample.pdf" type="application/pdf" width="300" height="200">
+        <p>Alternative text for browsers that do not support the object tag.</p>
+    </object>
+
+    <h3>iFrame</h3>
+    <iframe src="https://www.example.com" width="300" height="200"></iframe>
+
+    <h3>Data List</h3>
+    <label for="browser">Choose your browser:</label>
+    <input list="browsers" id="browser" name="browser">
+    <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Safari">
+        <option value="Edge">
+    </datalist>
+</section>
+
+<section id="section6">
+    <h2>Section 6: Details and Summary</h2>
+    <div class="details-summary">
+        <details>
+            <summary>More about HTML</summary>
+            <p>HTML stands for HyperText Markup Language. It is used to create web pages and web applications. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+        </details>
+    </div>
+</section>
+
+<section id="section7">
+    <h2>Section 7: Other Elements</h2>
+    <h3>Progress and Meter</h3>
+    <label for="file">File progress:</label>
+    <progress id="file" value="70" max="100">70%</progress>
+
+    <label for="disk">Disk usage:</label>
+    <meter id="disk" value="2" min="0" max="10">2 out of 10</meter>
+</section>
+
+<footer>
+    <p>&copy; 2024 Sample HTML Page</p>
+</footer>
+
+</body>
+</html>
